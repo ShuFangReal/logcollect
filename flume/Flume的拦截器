@@ -1,0 +1,17 @@
+1.主要是要implement Interceptor
+分别实现 initialize（）  intercept（Event event）  intercept（List<Event> event） close（）
+
+然后在自定义拦截器类中 创建一个Builder implements Interceptor.Builder{
+
+method1 return new 自定义类（）
+method2
+
+}
+
+sources.r1.type = tailDir 可以监控多目录 可以断点续传  有一个positionFile  记录每次读取的offset位置
+然后打包 ，通过全类名$Builder 来在xxxxx.conf文件中 配置拦截器
+
+header 结构： Map<"topic","topic_name">
+body 结构：byte[]
+
+实用方法
